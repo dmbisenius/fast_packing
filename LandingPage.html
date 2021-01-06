@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />  
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <script src="https://kit.fontawesome.com/4ec3052117.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+        <title>Fast-Packing USA, A better way to Backpack</title>
+    </head>
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1><strong>Fast-Packing USA</strong></h1>
+                    <h2><em>A better way to Backpack</em></h2>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="backpacking_images/Mountain_logo .png" class="img-fluid rounded">
+                </div>     
+            </div>            
+        </div>
+    </header>
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <div class="container">
+            <button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="fastPackNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="fastPackNavBar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link"
+                href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Routes.html"><i class="fa fa-tree fa-lg"></i>Routes</a></li>
+                <li class="nav-item"><a class="nav-link" href="Pricing.html"><i class="fas fa-tag fa-lg"></i>Cost</a></li>
+                <li class="nav-item"><a class="nav-link" href="Guides.html"><i class="fa fa-user-friends"></i>Guides</a></li>
+                <li class="nav-item"><a class="nav-link" href="Equipment.html"><i class="fas fa-campground"></i>Equipment</a></li>
+                <li class="nav-item"><a class="nav-link" href="ContactUs.html"><i class="fas fa-phone-square"></i>Contact</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <div class="row row-content">
+            <div class="col-8 mt-5">
+                <h1><strong>Maximum Experience</strong></h1><h2><em>Minimum Weight</em></h2>
+                <h6>Take advantage of our fast-packing concierge services
+                    to make the trip of a lifetime
+                <h6>
+                <a role="button" class="btn btn-lg btn-success text-nowrap mt-5" type="button" data-toggle="modal" data-target="#reserveModal" id="reserveButton">Reserve Now</a>
+                <a role="button" class="btn btn-lg btn-info text-nowrap mt-5" href="Routes.html" type="button" id="learnMore">Learn More</a>
+
+            </div>   
+            <div class="col-3">
+            <div class="card">
+                <img src="backpacking_images/Neeture.jpg" class="img-fluid ml-auto" alt="Backpacker">
+            </div>
+        </div>
+        </div>
+        <div id="reserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Reserve Your Trip</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                      <label class="col-sm-6 col-form-label" for="numHikers">Number of Hikers</label>
+                                        <div class="col">
+                                            <select class="form-control" name="numHikers" id="numHkers">
+                                                <option>Select...</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                      <label class="col-sm-6 col-form-label" for="route">Routes</label>
+                                        <div class="col">
+                                            <select class="form-control" name="route" id="route">
+                                                <option>Select...</option>
+                                                <option>Arizona Trail</option>
+                                                <option>Colorado Trail</option>
+                                                <option>Wonderland Trail</option>
+                                                <option>Custom Trail</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                <div class="row">
+                                    <label class="col-12 col-sm-6 col-form-label" for="date">Date</label>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" name="daterange" id="date" value="01/01/2018 - 01/15/2018" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <div class="row"> 
+                                        <label class="col-sm-6 col-form-label" for="route">Renting Equipment?</label>
+                                        <div class="col">
+                                            <select class="form-control" name="route" id="route">
+                                                <option>Select...</option>
+                                                <option>No</option>
+                                                <option>Standard Package</option>
+                                                <option>Premium Package</option>
+                                            </select>
+                                        </div>
+                                </div>  
+                            </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="cancel" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="row row-content align-items-center">
+        <div class="col">
+            <h2 class="text-center">Whether your shooting for a new FKT, or just want to enjoy the beauty of nature without
+                the burden of a heavy pack, FastPacking USA can help you accomplish your goals!
+                </h2>
+        </div>
+    </div>
+    <div class="row row-content align-items-center">
+        <div class="col-lg-12 col-sm-6">
+            <h3 class="text-center">How to Fast Pack?
+                </h3>
+        </div>
+        <div class="col-lg-12 col-sm-6">
+            <h6 class="text-center">We follow along and do all the hard work. All you need to do is walk!</h6>
+    </div>
+        <div class="col-4 mt-4">
+            <i class="col-12 text-center fas fa-3x fa-balance-scale-left"></i>
+            <h4 class="mt-1 col-12 text-center">Reduce Weight</h4>
+            <p class="mt-1 col-12 text-center">Carry only what you need for the day, not a month! With fast-packing you only need to bring enough to get you through each day!</p>
+        </div>
+        <div class="col-4 mt-4">
+            <i class="col-12 text-center fa-3x fab fa-envira"></i>
+            <h4 class="mt-1 col-12 text-center">No Stress</h4>
+            <p class="mt-1 col-12 text-center">Our experienced guide team will help to set-up your camp, make your breakfast and dinner, and monitor your progress in case of emergency</p>
+        </div>
+        <div class="col-4 mt-4">
+            <i class="col-12 text-center fas fa-3x fas fa-mountain"></i>
+            <h4 class="mt-1 col-12 text-center">Enjoy the Trip</h4>
+            <p class="mt-1 col-12 text-center">With our services we take out all the distracting concerns of a typical backpacking trip. This means you can focus on connecting with nature!</p>
+        </div>
+    </div>
+        <div class="row row-content align-items-center">
+            <div class="col-lg-12 col-sm-6">
+                <h3 class="text-center">Why Fast-Pack?
+                    </h3>
+            </div>
+            <div class="col-lg-12 col-sm-6">
+                <h6 class="text-center">Our Experienced Guide Team Is Here To Make Your Dreams Come True!</h6>
+                </div>
+                    <div class="col-3 mb-4">
+                        <img src="backpacking_images/tentytent.png" class="rounded mx-auto d-block">
+                        <h4 class="col-12 text-center">We Setup Camp</h4>
+                        <p class="col-12 text-center">Tents and sleeping bags will be setup for when you arrive</p>
+                    </div>
+                    <div class="col-3 mt-4">
+                        <img src="backpacking_images/Food.png" class="rounded mx-auto d-block">
+                        <h4 class="mt-1 col-12 text-center">We Provide the Hot Meals</h4>
+                        <p class="mt-1 col-12 text-center">Your guides will be preparing your meal for you every morning and night</p>
+                    </div>
+                    <div class="col-3 mt-4">
+                        <img src="backpacking_images/gps.png" class="rounded mx-auto d-block">
+                        <h4 class="mt-1 col-12 text-center">Monitoring</h4>
+                        <p class="mt-1 col-12 text-center">In case something unexpected happens out in the wild, our guides track your progressalong the way</p>
+                    </div>
+                    <div class="col-3 mt-5">
+                        <img src="backpacking_images/friends.png" class="rounded mx-auto d-block">
+                        <h4 class="mt-1 col-12 text-center">Be Prepared</h4>
+                        <p class="mt-1 col-12 text-center">With fast-packing, you can bring extra clothes in case of a sudden change in weather. This means your always prepared!</p>
+                    </div>
+                    </div>
+            <div class="row row-content">
+                <div class="col-5 mt-4 ml-4">
+                    <h2 class="ml-3"> <strong>Contact Us:</strong> </h2>
+                    <h4 class="ml-3">Boulder, CO</h4>
+                    <address class="ml-3">
+                        <i class="fas fa-map-marked-alt"></i> 3385 Martin Dr
+                        80305
+                    </address>
+                    <a role="button" class="btn btn-link" href="tel:+1800fastpack"><i class="fa fa-phone"></i>1-800-Fast-Pack</a><br>
+                    <a role="button" class="btn btn-link" href="mailto:FastPacking@fastpack.co"><i class="fa fa-envelope-o"></i> FastPacking@fastpack.co</a>
+                </div>
+                <div class="col-4 mx-auto align-right">
+                    <div class="card">
+                        <img src="backpacking_images/Basecamp_pic.jpg" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+             </div>
+        </div>
+        <footer class="site-footer" id=footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 id="social">Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a role="button" class="btn btn-link" href="tel:+1800fastpack"><i class="fa fa-phone fa-text-primary"></i> 1-800-Fast-Pack</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:FastPacking@fastpack.co"><i class="fa fa-envelope-o  fa-text-primary"></i>FastPacking@fastpack.co</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

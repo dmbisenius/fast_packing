@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />  
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <script src="https://kit.fontawesome.com/4ec3052117.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+        <title>Fast-Packing USA, A better way to Backpack</title>
+    </head>
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1><strong>Fast-Packing USA</strong></h1>
+                    <h2><em>A better way to Backpack</em></h2>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="backpacking_images/Mountain_logo .png" class="img-fluid rounded">
+                </div>     
+            </div>            
+        </div>
+    </header>
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <div class="container">
+            <button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="fastPackNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="fastPackNavBar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link"
+                href="LandingPage.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-tree fa-lg"></i>Routes</a></li>
+                <li class="nav-item"><a class="nav-link" href="Pricing.html"><i class="fas fa-tag fa-lg"></i>Cost</a></li>
+                <li class="nav-item"><a class="nav-link" href="Guides.html"><i class="fa fa-user-friends"></i>Guides</a></li>
+                <li class="nav-item"><a class="nav-link" href="Equipment.html"><i class="fas fa-campground"></i>Equipment</a></li>
+                <li class="nav-item"><a class="nav-link" href="ContactUs.html"><i class="fas fa-phone-square"></i>Contact</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row row-content" id="routeRow">
+            <div class="col mx-auto text-center">
+                <h1 class="text-center">Contact Us to Help You setup your Unique Experience from one of our Routes!</h1>
+                <a role="button" class="btn btn-lg btn-info text-nowrap" href="ContactUs.html" type="button" id="learnMore">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-md-8 mx-auto">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                        <li data-target="#homeCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                             <div class="carousel-item active">
+                                <img class="d-block w-100 h-100 img-fluid" src="backpacking_images/Arizona_trail.jfif" alt="Arizona Trail"/>
+                                    <div class="carousel-caption">
+                                        <h3>Discover the Arizona Trail</h3>
+                                      <p class="d-none d-sm-block">Perfect for Spring or Fall Excursions! This 800 mile trail packs a little bit of everything!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 h-100 img-fluid" src="backpacking_images/Colorado_Trail.jpg" alt="Colorado Trail"/>
+                                    <div class="carousel-caption">
+                                        <h3>Explore the Mountains of the Colorado Trail</h3>
+                                        <p class="d-none d-sm-block">High peaks, alpine lakes, abundant wildlife, and some of the best singletrack in the country</p>
+                                    </div>
+                                </div>
+                                   <div class="carousel-item">
+                                        <img class="d-block w-100 h-100 img-fluid" src="backpacking_images/Wonderland_trail.jpeg" alt="Wonderland Trail"/>
+                                        <div class="carousel-caption">
+                                        <h3>Bask in the shadow of Mount Rainier</h3>
+                                        <p class="d-none d-sm-block">This short Thru-Trail is the perfect option for weekend warriors looking for a few days of bliss</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img class="d-block w-100 h-100 img-fluid" src="backpacking_images/Custom_trail.jpg" alt="Trail Photo"/>
+                                         <div class="carousel-caption">
+                                         <h3>Make your own Route</h3>
+                                         <p class="d-none d-sm-block">Our experienced guides can help custom tailor the excursion of a lifetime</p>
+                              </div>
+                         </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carouselPause">
+                            <i class="fa fa-pause"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carouselPlay">
+                            <i class="fa fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer" id=footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h5 id="social">Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-6 text-right">
+                    <a role="button" class="btn btn-link" href="tel:+1800fastpack"><i class="fa fa-phone fa-text-primary"></i> 1-800-Fast-Pack</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:FastPacking@fastpack.co"><i class="fa fa-envelope-o  fa-text-primary"></i>FastPacking@fastpack.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
